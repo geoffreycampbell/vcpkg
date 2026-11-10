@@ -5249,7 +5249,7 @@
       "port-version": 1
     },
     "libgsf": {
-      "baseline": "1.14.60",
+      "baseline": "1.14.58",
       "port-version": 0
     },
     "libgta": {
