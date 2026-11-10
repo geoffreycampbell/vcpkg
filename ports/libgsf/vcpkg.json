@@ -1,0 +1,22 @@
+{
+  "name": "libgsf",
+  "version": "1.14.60",
+  "description": "A library for reading and writing structured file formats, including Microsoft OLE and ZIP.",
+  "homepage": "https://gitlab.gnome.org/GNOME/libgsf",
+  "license": "LGPL-2.1-or-later",
+  "supports": "(windows | linux | osx) & !uwp & !xbox",
+  "dependencies": [
+    "bzip2",
+    "gettext-libintl",
+    "glib",
+    {
+      "name": "libxml2",
+      "default-features": false
+    },
+    {
+      "name": "vcpkg-make",
+      "host": true
+    },
+    "zlib"
+  ]
+}
