@@ -1,7 +1,6 @@
 {
   "name": "libgsf",
   "version": "1.14.60",
-  "port-version": 1,
   "description": "A library for reading and writing structured file formats, including Microsoft OLE and ZIP.",
   "homepage": "https://gitlab.gnome.org/GNOME/libgsf",
   "license": "LGPL-2.1-or-later",
