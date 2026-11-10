@@ -1,7 +1,7 @@
 vcpkg_download_distfile(ARCHIVE
     URLS "https://download.gnome.org/sources/libgsf/1.14/libgsf-${VERSION}.tar.xz"
     FILENAME "libgsf-${VERSION}.tar.xz"
-    SHA512 cf750d84a15daa5450d61d800d2283d88627be98382997cfa417c0cdbcbdf0f40cdd0397b7100a5c6bdc2346cb860b6bde9237c56514aaa532ac86a9e33a5b26
+    SHA512 baebe93fc27c379af19757968ff788c4bcbd0e052a2ddc506794563dce28a0e8bcd24564987689e2e1bf727457d4f36144e3d139310b31c5c9d3aef5cf2f3623
 )
 
 vcpkg_extract_source_archive(

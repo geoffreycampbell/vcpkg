@@ -17,7 +17,7 @@ index 952c827..9dd34f3 100644
  	--with-typelib-dir=\$${libdir}/girepository-1.0
 -
 diff --git a/configure.ac b/configure.ac
-index 3c69f21..49fffa6 100644
+index 05fcec5..c66a99d 100644
 --- a/configure.ac
 +++ b/configure.ac
 @@ -250,7 +250,11 @@ AC_MSG_CHECKING([whether struct timeval is available])
@@ -192,21 +192,6 @@ index 121015e..f80b746 100644
  libgsf_1_la_LDFLAGS = -version-info $(VERSION_INFO) -export-symbols $(srcdir)/libgsf.syms
  if WITH_WIN32
    libgsf_1_la_LDFLAGS += -no-undefined
-diff --git a/gsf/gsf-infile-msole.c b/gsf/gsf-infile-msole.c
-index c9df5c0..c8066f3 100644
---- a/gsf/gsf-infile-msole.c
-+++ b/gsf/gsf-infile-msole.c
-@@ -902,6 +902,10 @@ gsf_infile_msole_new_child (GsfInfileMSOle *parent,
- 			gsf_input_set_size (GSF_INPUT (child), 0);
- 			return GSF_INPUT (child);
- 		}
-+
-+		/* Empty streams need neither a block chain nor a small-block file. */
-+		if (dirent->size == 0)
-+			return GSF_INPUT (child);
- 	}
- 
- 	info = parent->info;
 diff --git a/gsf/gsf-input-stdio.c b/gsf/gsf-input-stdio.c
 index b74b933..8f3a2ef 100644
 --- a/gsf/gsf-input-stdio.c
