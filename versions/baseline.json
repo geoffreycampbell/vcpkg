@@ -5248,6 +5248,10 @@
       "baseline": "2.2.3",
       "port-version": 1
     },
+    "libgsf": {
+      "baseline": "1.14.60",
+      "port-version": 0
+    },
     "libgta": {
       "baseline": "1.0.8",
       "port-version": 5
